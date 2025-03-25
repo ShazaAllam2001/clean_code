@@ -1,40 +1,27 @@
 # Clean Code
 
 ## Project Structure
-lib/
-├── core/
-│   └── service/
-├── feature/display_screen/data/
-│   ├── data_sources/
-│   ├── models/
-│   └── repositories/
-├── feature/display_screen/domain/
-│   ├── entities/
-│   └── usecases/
-└── feature/display_screen/presentation/
-    ├── cubit/
-    └── pages/
 
-### service 
+### **lib/core/service** 
 has dependency injection file for Cubit, UseCases, Repositories and Data sources
 
-### data_sources
+### **lib/feature/display_screen/data/data_sources**
 has a local data source to get tasks
 
-### models
+### **feature/display_screen/data/models**
 Task model with fields (id, title, description, isCompleted)
 
-### repositories
+### **feature/display_screen/data/repositories**
 Task Repository with functions (addTask, updateTask, removeTask)
 
-### entities
+### **feature/display_screen/domain/entities**
 Task Entity with fields (id, title, description, isCompleted)
 
-### usecases
+### **feature/display_screen/domain/usecases**
 usecase with function for fetching task from data source
 
-### cubit
+### **feature/display_screen/presentation/cubit**
 cubit using the GetTasks UseCase to get tasks from data source with states (TaskInitial, TaskLoading, TaskLoaded, TaskError)
 
-### pages
+### **feature/display_screen/presentation/pages**
 showing a listview of tasks with check mark to show each task if completed or not
