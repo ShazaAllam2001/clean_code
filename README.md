@@ -24,4 +24,7 @@ usecase with function for fetching task from data source
 cubit using the GetTasks UseCase to get tasks from data source with states (TaskInitial, TaskLoading, TaskLoaded, TaskError)
 
 ### **feature/display_screen/presentation/pages**
-showing a listview of tasks with check mark to show each task if completed or not
+showing a listview of tasks with check mark to show each task if completed or 
+
+## Output Screenshot
+[output](https://github.com/ShazaAllam2001/clean_code/tree/main/output)
